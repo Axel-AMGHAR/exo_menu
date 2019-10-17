@@ -1,2 +1,30 @@
+@import 'reset';
 @import 'menu';
 @import 'layout';
+
+
+.container {
+    width:100%;
+}
+
+body {
+    text-align: center;
+}
+
+ul {
+    list-style:none;
+    padding: 0px;
+    background-color: antiquewhite;
+
+}
+
+.div_lien {
+    margin: auto;
+    width:25%;
+}
+
+@media screen and (min-width: 768px) {
+    .width {
+
+    }  
+}
