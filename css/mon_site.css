@@ -345,12 +345,40 @@ ul {
 }
 
 .hamburger {
-  width: 30%;
+  width: 10%;
   margin: auto;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
 }
 
 .img_hamburger {
   width: 100%;
+}
+
+.div_lien {
+  padding: 0.5%;
+}
+
+.div_lien:hover {
+  background-color: bisque;
+}
+
+.img_menu {
+  width: 45px;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  ul {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .img_menu {
+    display: inline;
+  }
 }
 
 .container {
