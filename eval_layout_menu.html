@@ -5,9 +5,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Eval Layout menu</title>
 		<link rel="stylesheet" href="css/mon_site.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	</head>
 	<body>
-        <nav class="container">
+        <div class="hamburger">
+            <img src="img/hamburger.png" class="img_hamburger" >
+        </div>
+        <nav class="container menu">
             <ul>
                 <div class="div_lien">
                     <li><a href="">Acceuil</a></li>
@@ -27,5 +31,26 @@
             </ul>
         </nav>
 
+    <script>
+        function hide (){
+            $(".menu").hide();
+        }
+        
+        function show (){
+            $(".menu").show();
+        }        
+        
+        function menu (){
+            hide();
+            $(".hamburger").click(function(){
+                show();
+                $(".hamburger").click(function(){
+                    menu();
+                });
+            }); 
+        }
+        menu();
+        
+    </script>
 	</body>
 </html>
