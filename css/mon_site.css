@@ -333,52 +333,72 @@ template {
   display: none !important;
 }
 
-ul {
+.menu {
+  margin: 0;
+}
+
+.menu ul {
   list-style: none;
   padding: 0px;
+  margin: 0;
   background-color: antiquewhite;
 }
 
-.div_lien {
+.menu .div_lien {
   margin: auto;
   width: 25%;
+  padding: 0.5%;
 }
 
-.hamburger {
+.menu .div_lien:hover {
+  background-color: bisque;
+}
+
+.menu .hamburger {
   width: 10%;
   margin: auto;
   -ms-flex-pack: start;
       justify-content: flex-start;
 }
 
-.img_hamburger {
+.menu .img_hamburger {
   width: 100%;
 }
 
-.div_lien {
-  padding: 0.5%;
-}
-
-.div_lien:hover {
-  background-color: bisque;
-}
-
-.img_menu {
+.menu .img_menu {
   width: 45px;
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .hamburger {
+  .menu .hamburger {
     display: none;
   }
-  ul {
+  .menu ul {
     display: -ms-flexbox;
     display: flex;
   }
-  .img_menu {
+  .menu .img_menu {
     display: inline;
   }
+}
+
+.image_and_title {
+  position: relative;
+}
+
+.div_backgroud_image {
+  width: 100%;
+}
+
+.backgroud_image {
+  width: 100%;
+}
+
+.titre_image {
+  margin: -40%;
+  font-size: 200%;
+  color: white;
 }
 
 .container {
